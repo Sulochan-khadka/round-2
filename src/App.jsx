@@ -1,7 +1,12 @@
 import './App.css';
+import Home from './components/homepage/Home';
 
 function App() {
-  return <>hellow world</>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;
