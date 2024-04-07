@@ -10,12 +10,15 @@
     body {
       background: url('./background.jpg');
       background-repeat: no-repeat;
+      background-size: cover;
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
+      margin: 0;
+      padding: 0;
     }
+
     .gsc-search-box {
-      background-color: #f0f0f0;
+      /* background-color: #f0f0f0; */
       /* border: 1px solid #ccc; */
       padding: 0px;
       border-radius: 1rem;
@@ -24,10 +27,21 @@
       width: 400px;
       background: transparent;
       border-radius: 1rem;
+      padding: 0.2rem;
     }
     .gsc-search-button {
+      color: white;
+    }
+    .gsc-search-button-v2 {
       background-color: black;
       color: white;
+    }
+
+    .gsc-control-cse.gse-control-cse-en {
+      padding: 0;
+    }
+    .gsc-results-wrapper-overlay {
+      padding: 0;
     }
   </style>
   <body>
