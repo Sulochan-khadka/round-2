@@ -36,12 +36,12 @@ import {
 } from 'react-router-dom';
 import Home from '../components/homepage/Home.jsx';
 import Test from '../Test.jsx';
-import { useState, useContext } from 'react';
+// import { useState, useContext } from 'react';
 import { Helmet } from 'react-helmet';
-import ThemeSwitcher from './components/ThemeSwitcher';
-import { THEME_TYPE } from './constants';
+// import ThemeSwitcher from './components/ThemeSwitcher';
+// import { THEME_TYPE } from './constants';
 import Styles from '../data/Styles.js';
-import { ThemeContext, ThemeProvider } from './providers/ThemeProvider';
+// import { ThemeContext, ThemeProvider } from './';
 
 const routers = createBrowserRouter(
   createRoutesFromElements(
@@ -54,12 +54,12 @@ const routers = createBrowserRouter(
 
 const Routes = () => {
   return (
-    <ThemeProvider>
-      <Helmet>
-        <style>{Styles(themeMode.theme)}</style>
-      </Helmet>
-      <RouterProvider router={routers} />
-    </ThemeProvider>
+    // <ThemeProvider>
+    // <Helmet>
+    //   <style>{Styles(themeMode.theme)}</style>
+    // </Helmet>
+    <RouterProvider router={routers} />
+    // </ThemeProvider>
   );
 };
 
